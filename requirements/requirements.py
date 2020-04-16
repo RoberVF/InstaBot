@@ -3,9 +3,19 @@
 
 import os
 import sys
+import time
 
 try:
+    print("Python is installed correctly")
+    time.sleep(2)
+    os.system("cls")
+
+
+    print("Checking if pip is installed")
+    print(" ")
     os.system('pip -V')
+    time.sleep(2)
+    os.system("cls")
 
     try:
         import instapy
@@ -20,7 +30,7 @@ try:
             print("The tool is ready to use correctly")
             print("Now you can run the file start.py")
             os.system("pause")
-            exit()
+            os.system("exit")
 
         except ImportError:
             print("Argparse module is not installed")
